@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKN Electrical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+        crossorigin=""></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "RKN Electrical",
+        "image": "",
+        "telephone": "+91 9xxxxxxxxxx",
+        "email": "example@example.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "Nagpur",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": "India"
+        },
+        "openingHours": "",
+        "paymentAccepted": "",
+        "priceRange": "",
+        "services": "General services"
+    }
+    </script>
+</head>
+<body>
+    <nav class="sticky top-0 z-50 bg-white shadow-lg py-4">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex justify-between items-center">
+            <h2 class="text-2xl font-bold">RKN Electrical</h2>
+            <button id="hamburger" class="lg:hidden flex justify-center w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-lg">
+                🍔
+            </button>
+            <ul id="nav-menu" class="hidden lg:flex items-center space-x-4">
+                <li class="hover:text-blue-600"><a href="#hero">Home</a></li>
+                <li class="hover:text-blue-600"><a href="#services">Services</a></li>
+                <li class="hover:text-blue-600"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero" class="h-[80vh] bg-gradient-to-r from-blue-500 to-blue-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col justify-center items-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">RKN Electrical</h1>
+            <p class="text-lg mb-8">Get the best electrical services in Nagpur</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg">Contact Us</button>
+        </div>
+    </section>
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white shadow-lg p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🔌 General Services</h3>
+                    <p class="text-gray-600">We provide general electrical services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p class="text-lg mb-4">We are a team of expert electricians</p>
+            <p class="text-lg mb-4">Trust us for your electrical needs</p>
+        </div>
+    </section>
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white shadow-lg p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">⭐⭐⭐⭐⭐</h3>
+                    <p class="text-gray-600">Great service!</p>
+                    <p class="text-gray-600">- John, Nagpur</p>
+                </div>
+                <div class="bg-white shadow-lg p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">⭐⭐⭐⭐⭐</h3>
+                    <p class="text-gray-600">Excellent work!</p>
+                    <p class="text-gray-600">- Jane, Nagpur</p>
+                </div>
+                <div class="bg-white shadow-lg p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">⭐⭐⭐⭐⭐</h3>
+                    <p class="text-gray-600">Very professional!</p>
+                    <p class="text-gray-600">- Bob, Nagpur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+            <form action="https://formspree.io/f/xbdzenyd" method="POST" id="contact-form" class="space-y-4">
+                <input type="hidden" name="_subject" value="New inquiry from RKN Electrical">
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded-lg focus:ring-2 outline-none">
+                <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 border rounded-lg focus:ring-2 outline-none">
+                <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-3 border rounded-lg focus:ring-2 outline-none"></textarea>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg">Send Message</button>
+            </form>
+            <p class="text-lg mb-4">Phone: +91 9xxxxxxxxxx</p>
+            <p class="text-lg mb-4">Email: example@example.com</p>
+        </div>
+    </section>
+    <section id="map" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <h2 class="text-3xl font-bold mb-8">Our Location</h2>
+            <div id="leaflet-map" style="height: 400px;"></div>
+        </div>
+    </section>
+    <footer class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <p class="text-lg mb-4">Copyright 2024 RKN Electrical</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/919xxxxxxxxxx?text=Hello%2C%20I%20found%20you%20online" target="_blank"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg text-2xl transition-all" aria-label="Chat on WhatsApp">
+       💬
+    </a>
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Hamburger toggle
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-menu').classList.toggle('hidden');
+        });
+
+        // Nav scroll effect
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 100) {
+                document.querySelector('nav').classList.add('shadow-lg');
+            } else {
+                document.querySelector('nav').classList.remove('shadow-lg');
+            }
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            fetch('https://formspree.io/f/xbdzenyd', {
+                method: 'POST',
+                body: new FormData(this)
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+        });
+
+        // Leaflet map
+        var map = L.map('leaflet-map').setView([21.1456, 79.0942], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+            subdomains: ['a', 'b', 'c']
+        }).addTo(map);
+        var marker = L.marker([21.1456, 79.0942]).addTo(map);
+        marker.bindPopup('RKN Electrical, Nagpur');
+    </script>
+</body>
+</html>
